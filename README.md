@@ -1,9 +1,9 @@
 # Hooks by Ronae
 ### E-Commerce Website with n8n Workflow Automation
 
-**Hooks by Ronae** is a modern, responsive e-commerce website developed for a handmade crochet and amigurumi business. The platform provides a visually engaging online storefront where customers can browse crochet products, explore product categories, view pricing information, and submit inquiries for customized handmade items.
+**Hooks by Ronae** is a modern, responsive e-commerce website developed for a handmade crochet and amigurumi business. The platform provides an online storefront where customers can browse crochet products, explore collections, view pricing information, and submit personalized order inquiries.
 
-The project combines AI-assisted web development with workflow automation concepts using n8n, focusing on improving customer interactions, organizing inquiries, and minimizing repetitive administrative tasks.
+The project focuses on combining web application development with workflow automation to improve customer interactions, streamline order management, and reduce repetitive administrative tasks.
 
 **Live Website:** https://ronae-shop.vercel.app/
 
@@ -17,21 +17,21 @@ The project combines AI-assisted web development with workflow automation concep
 
 ## 1. Project Overview
 
-Hooks by Ronae was developed to provide an accessible digital storefront for a small handmade crochet business.
+Hooks by Ronae provides a centralized digital storefront for a handmade crochet business.
 
-The website offers an organized product catalog featuring crochet animals, fruits, dolls, and other handcrafted items. Its design prioritizes usability, responsive layouts, and an aesthetically consistent shopping experience.
+The website features product collections, detailed product information, shopping cart interactions, and custom-order inquiries.
 
-Beyond the storefront, the project explores the integration of n8n workflows to streamline customer inquiries and order-related operations.
+The system architecture also supports future integration with n8n to automate customer inquiries, organize order information, and coordinate business notifications.
 
 ### Project Objectives
 
-- Develop a responsive and visually appealing e-commerce website.
-- Provide a centralized platform for displaying handmade crochet products.
-- Improve product discovery through organized categories.
-- Support customer inquiries and personalized order requests.
-- Design n8n automation workflows for repetitive business processes.
-- Reduce manual administrative work through integrations.
-- Demonstrate practical experience in AI-assisted web development and workflow automation.
+- Develop a responsive e-commerce website.
+- Provide an organized storefront for handmade crochet products.
+- Improve product discovery through categorized collections.
+- Support personalized crochet orders and customer inquiries.
+- Integrate workflow automation into business operations.
+- Reduce repetitive data entry and administrative processes.
+- Establish a scalable foundation for order management.
 
 ---
 
@@ -39,55 +39,51 @@ Beyond the storefront, the project explores the integration of n8n workflows to 
 
 ### 2.1 Product Catalog
 
-The website provides an organized catalog of handmade crochet products.
+The website displays a variety of handmade crochet products, including:
+
+- Amigurumi animals
+- Crochet fruits
+- Character-inspired crochet dolls
+- Handmade accessories
+- Personalized crochet gifts
+
+Product information includes images, descriptions, pricing, and available customization details.
+
+### 2.2 Responsive User Interface
+
+The application provides a responsive interface designed for desktop, tablet, and mobile devices.
 
 Features include:
 
-- Product images and descriptions
-- Product pricing
-- Product categorization
-- Crochet materials and yarn information
-- Product browsing across multiple collections
+- Organized product layouts
+- Mobile-friendly navigation
+- Consistent visual styling
+- Intuitive shopping experience
+- Accessible product information
 
-### 2.2 Responsive Website Design
+### 2.3 Shopping Cart
 
-The interface is designed to adapt to different devices and screen sizes.
-
-Key design considerations:
-
-- Mobile-responsive layouts
-- Consistent navigation
-- Organized product display
-- Pastel-themed interface
-- Accessible shopping experience
-
-### 2.3 Shopping Cart Interface
-
-The website includes shopping cart functionality designed to help customers organize their selected products.
-
-The interface supports the shopping experience by presenting product selections before checkout.
+The shopping cart interface allows customers to organize selected products before proceeding with their purchase inquiries.
 
 ### 2.4 Custom Order Requests
 
 Customers can submit personalized crochet requests based on their preferences.
 
-The request process can capture information such as:
+Information may include:
 
-- Desired crochet design
-- Preferred colors
-- Yarn material
+- Product design
+- Preferred color
+- Yarn type
 - Product size
 - Quantity
-- Estimated budget
-- Preferred delivery date
+- Budget
+- Requested delivery date
 
-The current custom-order process uses an email-based submission mechanism. Direct automation through n8n is a planned integration.
+The current custom-order submission process is email-based, with webhook automation available as a future integration.
 
 ### 2.5 Customer Inquiry Management
 
-The project includes a customer contact experience intended to make inquiries about products, custom orders, and availability easier to manage.
-
-The planned automation architecture provides a foundation for capturing, validating, and organizing customer requests.
+The website provides a contact channel for customers interested in product availability, custom orders, pricing, and other inquiries.
 
 ---
 
@@ -95,37 +91,25 @@ The planned automation architecture provides a foundation for capturing, validat
 
 | Technology | Purpose |
 |---|---|
-| Lovable | AI-assisted website development |
-| React | Frontend user interface |
-| TypeScript | Application development |
-| CSS | Styling and responsive design |
-| GitHub | Version control and repository management |
-| Vercel | Website deployment and hosting |
-| n8n | Workflow automation platform |
-| Webhooks | Event-based workflow triggering |
-| REST APIs | Integration between services |
+| React | Frontend interface development |
+| TypeScript | Application logic and type safety |
+| CSS | Responsive layout and styling |
+| Git | Source code version control |
+| GitHub | Repository management |
+| Vercel | Application hosting and deployment |
+| n8n | Workflow automation |
+| Webhooks | Event-based integrations |
+| REST APIs | External service communication |
 
-The exact dependencies and framework configuration should be verified against the project's `package.json` and source code.
+The project's specific dependencies and framework configuration can be reviewed in `package.json`.
 
 ---
 
 ## 4. System Architecture
 
-The application is structured around three primary components:
+The application architecture consists of a frontend storefront, an automation layer, and external services for order tracking and notifications.
 
-**Frontend Application**
-
-The customer-facing storefront handles product browsing, navigation, shopping cart interactions, and custom-order forms.
-
-**Automation Layer**
-
-n8n is the intended automation platform for receiving customer requests, processing submitted information, and coordinating external services.
-
-**External Integrations**
-
-Webhooks and APIs provide potential connections between the website, email notifications, spreadsheets, and order management tools.
-
-### Proposed Architecture
+### Proposed System Flow
 
 ```text
                   Customer
@@ -163,7 +147,7 @@ Webhooks and APIs provide potential connections between the website, email notif
                      Manual Order Review
 ```
 
-This architecture represents the proposed automated workflow. It does not imply that every integration is currently deployed.
+The automation portion represents the proposed integration architecture and will be updated as workflows are implemented.
 
 ---
 
@@ -171,15 +155,15 @@ This architecture represents the proposed automated workflow. It does not imply 
 
 ### 5.1 Automation Overview
 
-The n8n automation component is designed to support customer inquiry management and order-processing operations.
+The automation component is designed to streamline repetitive processes related to customer inquiries, custom orders, and business notifications.
 
-Its primary objective is to reduce repetitive manual tasks by connecting incoming website requests to structured tracking and notification workflows.
+The intended workflow connects website submissions with n8n through webhooks, processes customer information, and forwards structured data to connected services.
 
 ### 5.2 Customer Inquiry Automation
 
 **Objective**
 
-Streamline the collection, validation, and organization of customer inquiries submitted through the website.
+Automate the collection and organization of customer inquiries.
 
 **Proposed Workflow**
 
@@ -187,16 +171,16 @@ Streamline the collection, validation, and organization of customer inquiries su
 Customer Submits Inquiry
           |
           v
-Website Webhook Trigger
+Website Webhook
           |
           v
-n8n Webhook Node
+n8n Webhook Trigger
           |
           v
-Validate Request Details
+Validate Customer Information
           |
           v
-Categorize Inquiry
+Categorize Request
           |
      -------------
      |           |
@@ -207,79 +191,76 @@ Inquiry       Request
      -------------
           |
           v
-Store Inquiry Details
+Record Inquiry Details
           |
           v
 Notify Business Owner
           |
           v
-Wait for Manual Response
+Manual Follow-Up
 ```
 
 **Expected Benefits**
 
-- Centralized inquiry tracking
-- Reduced manual data entry
-- Consistent information capture
-- Improved visibility of customer requests
-- Faster administrative processing
+- Reduced manual inquiry tracking
+- Centralized customer information
+- Consistent request processing
+- Improved communication efficiency
+- Easier order monitoring
 
-### 5.3 Custom Order Automation
+### 5.3 Custom Order Processing
 
 **Objective**
 
-Organize personalized crochet requests and provide structured order information for business owner review.
+Organize customer requests and provide structured information for order fulfillment.
 
 **Proposed Process**
 
 1. A customer submits a custom crochet request.
-2. The website sends the submitted information to an n8n webhook.
-3. n8n validates the required fields.
-4. The workflow organizes the request details.
-5. The request is recorded in a connected tracking system.
+2. The website sends the request to an n8n webhook.
+3. The workflow validates the required information.
+4. Customer details and order specifications are organized.
+5. The request is stored in a connected tracking system.
 6. The business owner receives a notification.
-7. The order is reviewed before acceptance or production.
+7. The order is reviewed and processed manually.
 
-**Potential Integrations**
+### 5.4 Automated Notifications
 
-- Google Sheets for order tracking
-- Gmail or other email services for notifications
-- Messaging platforms for internal alerts
-- Database systems for structured order records
+The planned notification workflow can send alerts for:
 
-### 5.4 Automated Customer Notifications
+- New customer inquiries
+- Custom order requests
+- Order confirmations
+- Order status updates
+- Order fulfillment notifications
 
-The proposed notification workflow can provide updates after customers submit inquiries or orders.
+### 5.5 Integration Options
 
-Potential notifications include:
-
-- Inquiry received
-- Custom order request submitted
-- Order accepted
-- Order status updated
-- Order ready for delivery
-
-### 5.5 Automation Implementation Status
-
-| Automation Component | Status |
+| Integration | Purpose |
 |---|---|
-| Customer-facing website | Deployed |
-| Custom-order email submission | Available |
-| Website-to-n8n webhook | Planned / Not verified |
-| Automated inquiry categorization | Planned / Not verified |
-| Order tracking integration | Planned / Not verified |
-| Automated customer notifications | Planned / Not verified |
-| Automated inventory updates | Future enhancement |
+| Website Webhooks | Receive customer requests |
+| n8n | Process incoming data |
+| Google Sheets | Track inquiries and orders |
+| Email Services | Send notifications |
+| Database | Store structured customer and order information |
 
-The automation components should be updated to reflect their actual implementation and testing status.
+### 5.6 Automation Status
+
+| Component | Status |
+|---|---|
+| E-commerce storefront | Deployed |
+| Custom-order email submission | Available |
+| n8n webhook integration | Planned / Pending verification |
+| Automated inquiry processing | Planned / Pending verification |
+| Order tracking automation | Planned / Pending verification |
+| Customer notifications | Planned / Pending verification |
+| Inventory synchronization | Future enhancement |
 
 ---
 
 ## 6. Project Structure
 
-The Lovable project uses a source-code structure containing frontend components, assets, routes, and configuration files.
-
-A simplified directory overview is shown below:
+A simplified example of the application structure:
 
 ```text
 hooks-by-ronae/
@@ -296,16 +277,13 @@ hooks-by-ronae/
 |   |-- routes/
 |   |-- stores/
 |   |-- styles.css
-|   |-- router.tsx
-|   |-- server.ts
 |
 |-- package.json
 |-- README.md
 |-- .gitignore
-|-- .lovable/
 ```
 
-The actual repository may contain additional configuration files, generated files, and application modules.
+The exact directory structure depends on the files in the repository.
 
 ---
 
@@ -313,168 +291,162 @@ The actual repository may contain additional configuration files, generated file
 
 ### Prerequisites
 
-Make sure the following tools are installed:
-
 - Node.js
 - Git
-- A compatible package manager
-- Visual Studio Code or another code editor
+- npm or another supported package manager
+- Visual Studio Code or an equivalent code editor
 
-### Step 1: Clone the Repository
+### Clone the Repository
 
 ```bash
 git clone https://github.com/YOUR-USERNAME/YOUR-REPOSITORY.git
 ```
 
-### Step 2: Navigate to the Project Directory
+### Navigate to the Directory
 
 ```bash
 cd YOUR-REPOSITORY
 ```
 
-### Step 3: Install Dependencies
-
-For an npm-based project:
+### Install Dependencies
 
 ```bash
 npm install
 ```
 
-### Step 4: Run the Development Server
+### Start the Development Server
 
 ```bash
 npm run dev
 ```
 
-Open the local URL provided in the terminal.
+Open the local URL displayed in the terminal.
 
-The exact installation and development commands depend on the scripts and package manager configured in the project.
+These commands assume an npm-based project. Consult `package.json` for the actual development scripts.
 
 ---
 
 ## 8. Deployment
 
-The Hooks by Ronae website is deployed using Vercel.
+The website is hosted using Vercel.
 
 ### Deployment Process
 
-1. Develop and maintain the application source code.
-2. Connect the project to a GitHub repository.
-3. Import the repository into Vercel.
-4. Configure the framework and required environment variables.
-5. Run the production build.
-6. Deploy the application.
-7. Verify website functionality after deployment.
+1. Push the project source code to GitHub.
+2. Connect the repository to Vercel.
+3. Configure the framework settings.
+4. Add any required environment variables.
+5. Build and deploy the application.
+6. Verify frontend functionality and integrations.
 
-When GitHub integration is enabled, new commits to the production branch can automatically trigger Vercel deployments.
+Vercel can automatically redeploy the production website when new changes are pushed to the connected GitHub branch.
 
-**Production Website:** https://ronae-shop.vercel.app/
+**Live Application:** https://ronae-shop.vercel.app/
 
 ---
 
 ## 9. Testing and Validation
 
-### Website Testing
+### Frontend Testing
 
-The website should be validated for:
+Key areas for validation include:
 
-- Responsive layouts across devices
-- Product navigation
-- Product information display
+- Responsive layout
+- Page navigation
+- Product catalog display
 - Shopping cart interactions
-- Custom-order form behavior
-- Contact functionality
-- Deployment and page-loading errors
+- Custom-order forms
+- Customer contact functionality
+- Application performance
 
 ### Automation Testing
 
-Once the n8n integrations are connected, testing should include:
+Once the workflows are implemented, validation should cover:
 
-- Webhook request handling
-- Required-field validation
-- Duplicate request prevention
-- Data formatting and mapping
-- External service authentication
+- Webhook triggering
+- Request payload validation
+- Data field mapping
+- Duplicate request handling
+- Error handling
 - Notification delivery
-- Error handling and workflow recovery
-
-Testing results should be documented before automation workflows are marked as production-ready.
+- Order-tracker updates
 
 ---
 
-## 10. Challenges and Technical Considerations
+## 10. Technical Considerations
 
-### Website and Automation Integration
+### API and Webhook Integration
 
-Connecting an e-commerce website to an external automation platform requires secure communication between the frontend, backend services, and workflow engine.
+Connecting an e-commerce application to an automation platform requires reliable and secure data exchange.
 
-Potential challenges include:
+Important considerations include:
 
-- Managing webhook authentication
-- Preventing duplicate submissions
-- Handling incomplete customer information
-- Protecting customer data
-- Maintaining accurate order records
-- Monitoring workflow execution failures
+- Secure webhook endpoints
+- Input validation
+- Authentication and authorization
+- Error handling
+- Customer data protection
+- Duplicate submission prevention
+- Workflow execution monitoring
 
-### Deployment Management
+### Deployment and Maintenance
 
-Deploying a Lovable-generated project independently requires attention to:
+The deployment process should account for:
 
-- Runtime environment configuration
-- Dependency compatibility
+- Dependency updates
 - Environment variables
-- External service connections
-- Hosting platform requirements
+- Production build configuration
+- External service availability
+- Version control
+- Application monitoring
 
 ---
 
 ## 11. Future Enhancements
 
-The following improvements are planned or being considered:
+### Workflow Automation
 
-**Automation Development**
-
-- Complete the n8n webhook integration.
-- Implement automated inquiry classification.
-- Create a centralized customer and order database.
-- Configure automatic inquiry confirmation emails.
+- Complete the website-to-n8n webhook integration.
+- Implement automated customer inquiry processing.
+- Connect customer requests to an order-tracking database.
+- Configure automated email confirmations.
 - Implement order status notifications.
 
-**E-Commerce Improvements**
+### E-Commerce Functionality
 
 - Payment gateway integration
-- Inventory tracking
-- Product management dashboard
-- Customer order history
+- Admin product management dashboard
+- Inventory management
+- Customer account management
+- Order history
 - Order fulfillment tracking
 
-**User Experience**
+### User Experience
 
-- Improved product filtering
-- Enhanced search functionality
+- Advanced product filtering
+- Improved search functionality
 - Customer reviews
-- Personalized product recommendations
-- Additional accessibility improvements
+- Product recommendations
+- Enhanced accessibility
 
 ---
 
 ## 12. Project Outcomes
 
-Hooks by Ronae demonstrates the process of creating an e-commerce storefront using AI-assisted development tools and preparing it for integration with external workflow automation services.
+Hooks by Ronae demonstrates the development and deployment of a responsive e-commerce storefront with an architecture designed to support business process automation.
 
-The project provides experience in:
+The project covers:
 
-- Frontend web application development
-- AI-assisted development workflows
-- E-commerce user experience design
-- GitHub repository management
-- Cloud application deployment
-- Automation architecture design
-- Webhook and API integration concepts
-- Business process improvement
+- Frontend application development
+- Responsive interface design
+- E-commerce functionality
+- Cloud-based deployment
+- Version control and repository management
+- Workflow architecture
+- Webhook and API integration design
+- Business process optimization
 
-The planned n8n integrations aim to extend the storefront beyond product presentation into a more automated order and customer inquiry management system.
+As automation components are implemented, the platform can support more efficient management of customer requests and order-related operations.
 
 ---
 
@@ -482,9 +454,9 @@ The planned n8n integrations aim to extend the storefront beyond product present
 
 **Website:** https://ronae-shop.vercel.app/
 
-**Hosting:** Vercel
+**Platform:** Vercel
 
-**Project Category:** E-Commerce Web Application / Workflow Automation
+**Category:** E-Commerce and Workflow Automation
 
 ---
 
@@ -492,22 +464,22 @@ The planned n8n integrations aim to extend the storefront beyond product present
 
 **Angelica Unclara**
 
-Marketing Operations and Workflow Automation
+Marketing Operations and Automation Specialist
 
-Areas of Focus:
+**Technical Focus**
 
+- n8n Workflow Automation
+- Web Application Development
+- API and Webhook Integration
 - Business Process Automation
-- n8n Workflow Development
-- API and Webhook Integrations
-- AI-Assisted Web Development
 - Data Processing and System Integration
 
 ---
 
-## 15. Project Disclaimer
+## 15. Development Status
 
-Hooks by Ronae is an independent website development and automation portfolio project.
+The e-commerce storefront is publicly deployed.
 
-Certain automation components described in this documentation represent planned integrations and workflow architecture rather than confirmed production functionality.
+The n8n automation architecture is documented as a planned extension of the application. Individual automation features will be marked as operational after successful integration and testing.
 
-Implementation statuses will be updated as integrations are completed, tested, and deployed.
+Future development will focus on connecting the storefront to automated customer inquiry, order processing, and notification workflows.
